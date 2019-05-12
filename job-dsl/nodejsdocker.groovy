@@ -14,7 +14,7 @@ job('NodeJS Docker example') {
     }
     steps {
         dockerBuildAndPublish {
-            repositoryName('crispydyck/jenkins-demo-node')
+            repositoryName('crispyduck/jenkins-demo-node')
             tag('${GIT_REVISION,length=9}')
             registryCredentials('2cf0539e-b33c-4e1a-b479-62e551fa5bc3')
             forcePull(false)
